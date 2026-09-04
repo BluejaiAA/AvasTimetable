@@ -298,44 +298,50 @@
 <!-- FRENCHIE (pink bow) -->
 <div class="frenchie" id="frenchie" onclick="frenchieTap()">
   <div class="speech" id="frenchieSpeech">thwip!</div>
-  <svg class="frbody" width="112" height="123" viewBox="0 0 200 220" fill="none">
+  <svg class="frbody" width="112" height="120" viewBox="0 0 200 215" fill="none">
   <defs>
-    <linearGradient id="bodyg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8d2cc"/><stop offset="1" stop-color="#c4beb6"/></linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0dad3"/><stop offset="1" stop-color="#ccc4bb"/></linearGradient>
     <linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8323f"/><stop offset="1" stop-color="#c31824"/></linearGradient>
-    <linearGradient id="earR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8323f"/><stop offset="1" stop-color="#c8202c"/></linearGradient>
+    <radialGradient id="belly" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#eee9e2"/><stop offset="1" stop-color="#dcd4cb"/></radialGradient>
   </defs>
-  <g stroke="#3a332c" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M100 92 Q 152 96 156 150 Q 158 196 100 198 Q 42 196 44 150 Q 48 96 100 92 Z" fill="url(#bodyg)"/>
-    <path d="M80 168 Q 78 196 80 200 Q 84 204 90 202 L92 174 Z" fill="url(#bodyg)"/>
-    <path d="M120 168 Q 122 196 120 200 Q 116 204 110 202 L108 174 Z" fill="url(#bodyg)"/>
+  <g stroke="#39322b" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 120 C 60 120 46 150 48 172 C 49 190 66 196 100 196 C 134 196 151 190 152 172 C 154 150 140 120 100 120 Z" fill="url(#coat)"/>
+    <path d="M52 168 C 40 168 36 184 46 190 C 54 194 62 188 60 176 Z" fill="url(#coat)"/>
+    <path d="M148 168 C 160 168 164 184 154 190 C 146 194 138 188 140 176 Z" fill="url(#coat)"/>
+    <path d="M80 170 L80 194 C 80 198 74 198 72 196 C 70 194 70 176 72 170 Z" fill="url(#coat)"/>
+    <path d="M120 170 L120 194 C 120 198 126 198 128 196 C 130 194 130 176 128 170 Z" fill="url(#coat)"/>
+    <ellipse cx="76" cy="196" rx="9" ry="5" fill="url(#coat)"/>
+    <ellipse cx="124" cy="196" rx="9" ry="5" fill="url(#coat)"/>
   </g>
-  <g stroke="#b6ab9e" stroke-width="2.6" stroke-linecap="round"><path d="M82 197 v4 M87 197 v4"/><path d="M113 197 v4 M118 197 v4"/></g>
-  <ellipse cx="100" cy="150" rx="34" ry="34" fill="#eeeae4" opacity=".5"/>
-  <path d="M154 138 q 13 -3 13 8 q 0 9 -11 7" fill="url(#bodyg)" stroke="#3a332c" stroke-width="5" stroke-linejoin="round"/>
-  <g transform="translate(100,150)" stroke="#2a2a2a" stroke-width="1.4" fill="#2a2a2a">
-    <ellipse cx="0" cy="0" rx="3" ry="5"/>
-    <path d="M0 -4 l-7 -5 M0 -4 l7 -5 M0 -2 l-9 -1 M0 -2 l9 -1 M0 2 l-8 4 M0 2 l8 4 M0 4 l-6 7 M0 4 l6 7" stroke-linecap="round"/>
+  <ellipse cx="100" cy="162" rx="30" ry="28" fill="url(#belly)" opacity=".8"/>
+  <g stroke="#c3b8ac" stroke-width="2.2" stroke-linecap="round"><path d="M73 194 v3 M79 194 v3"/><path d="M121 194 v3 M127 194 v3"/></g>
+  <g transform="translate(100,158)" stroke="#2a2a2a" stroke-width="1.3" fill="#2a2a2a">
+    <ellipse cx="0" cy="0" rx="2.6" ry="4.4"/>
+    <path d="M0 -3.5 l-6 -4 M0 -3.5 l6 -4 M0 -1.5 l-8 -1 M0 -1.5 l8 -1 M0 1.5 l-7 3.5 M0 1.5 l7 3.5 M0 3.5 l-5 6 M0 3.5 l5 6" stroke-linecap="round"/>
   </g>
-  <g stroke="#3a332c" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M64 74 Q 44 22 34 18 Q 28 50 44 90 Z" fill="url(#earR)"/>
-    <path d="M136 74 Q 156 22 166 18 Q 172 50 156 90 Z" fill="url(#earR)"/>
-    <path d="M100 36 Q 146 38 152 84 Q 156 122 128 140 Q 100 156 72 140 Q 44 122 48 84 Q 54 38 100 36 Z" fill="url(#red)"/>
+  <g stroke="#39322b" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M60 66 C 40 20 34 14 30 16 C 26 40 34 74 58 88 Z" fill="url(#red)"/>
+    <path d="M140 66 C 160 20 166 14 170 16 C 174 40 166 74 142 88 Z" fill="url(#red)"/>
+    <path d="M58 66 C 44 32 40 26 37 27 C 35 44 41 68 56 80 Z" fill="#a8121c" stroke-width="0"/>
+    <path d="M142 66 C 156 32 160 26 163 27 C 165 44 159 68 144 80 Z" fill="#a8121c" stroke-width="0"/>
+    <path d="M100 40 C 66 40 50 62 50 90 C 50 118 72 134 100 134 C 128 134 150 118 150 90 C 150 62 134 40 100 40 Z" fill="url(#red)"/>
   </g>
-  <g stroke="#7a0e17" stroke-width="1.6" fill="none" opacity=".85" stroke-linecap="round">
-    <path d="M100 40 V 70"/><path d="M70 48 Q 100 58 130 48"/><path d="M56 66 Q 100 78 144 66"/>
-    <path d="M52 86 Q 100 98 148 86"/><path d="M60 108 Q 100 118 140 108"/><path d="M72 128 Q 100 136 128 128"/>
-    <path d="M76 46 Q 74 90 82 132"/><path d="M124 46 Q 126 90 118 132"/><path d="M100 40 Q 100 90 100 138" opacity=".5"/>
+  <g stroke="#7a0e17" stroke-width="1.5" fill="none" opacity=".85" stroke-linecap="round">
+    <path d="M100 42 V 66"/><path d="M74 52 Q 100 60 126 52"/><path d="M60 70 Q 100 80 140 70"/>
+    <path d="M56 90 Q 100 100 144 90"/><path d="M62 110 Q 100 118 138 110"/><path d="M74 128 Q 100 134 126 128"/>
+    <path d="M78 50 Q 74 92 84 130"/><path d="M122 50 Q 126 92 116 130"/><path d="M100 42 Q 100 90 100 132" opacity=".5"/>
+    <path d="M54 60 Q 44 46 38 30"/><path d="M146 60 Q 156 46 162 30"/>
   </g>
   <g stroke="#111" stroke-width="4" stroke-linejoin="round">
-    <path d="M64 96 Q 66 78 86 82 Q 94 84 92 98 Q 90 112 76 112 Q 64 110 64 96 Z" fill="#fff"/>
-    <path d="M136 96 Q 134 78 114 82 Q 106 84 108 98 Q 110 112 124 112 Q 136 110 136 96 Z" fill="#fff"/>
+    <path d="M62 88 Q 64 70 84 74 Q 92 76 90 90 Q 88 104 74 104 Q 62 102 62 88 Z" fill="#fff"/>
+    <path d="M138 88 Q 136 70 116 74 Q 108 76 110 90 Q 112 104 126 104 Q 138 102 138 88 Z" fill="#fff"/>
   </g>
-  <path d="M68 98 Q 70 86 84 88" stroke="#cfd6dd" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M132 98 Q 130 86 116 88" stroke="#cfd6dd" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M100 128 Q 122 132 124 148 Q 125 160 112 164 Q 100 168 88 164 Q 75 160 76 148 Q 78 132 100 128 Z" fill="#c9c3bd" stroke="#3a332c" stroke-width="4.5" stroke-linejoin="round"/>
-  <ellipse cx="100" cy="140" rx="6" ry="4.5" fill="#2a231c"/>
-  <path d="M100 144 v5" stroke="#3a332c" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M100 149 Q 92 156 86 151 M100 149 Q 108 156 114 151" stroke="#3a332c" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M66 90 Q 68 78 82 80" stroke="#cfd6dd" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M134 90 Q 132 78 118 80" stroke="#cfd6dd" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M100 116 C 118 116 128 124 128 132 C 128 143 115 148 100 148 C 85 148 72 143 72 132 C 72 124 82 116 100 116 Z" fill="#d8d2cc" stroke="#39322b" stroke-width="4"/>
+  <path d="M90 124 Q 100 120 110 124 Q 113 131 105 134 Q 100 136 95 134 Q 87 131 90 124 Z" fill="#2a2320"/>
+  <path d="M100 134 v5" stroke="#39322b" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M100 139 Q 91 147 84 141 M100 139 Q 109 147 116 141" stroke="#39322b" stroke-width="3.2" fill="none" stroke-linecap="round"/>
 </svg>
 </div>
 
@@ -414,19 +420,19 @@ function L(s,code,tr,room,c){return {s:s,r:(code?code+" "+R+" ":"")+(tr||"")+(ro
 
 // AVA - Week A (Mon 14 - Fri 18 Sep 2026)
 var WEEK_A={
-  Monday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","JH","UA2","s-maths"),L("Music","8TC/Mu","CE","PA2","s-music"),L("Science","8G3/Sc","AK","UC8","s-science"),L("Digital Skills","8TC/Ds","SXE","UC10","s-ds"),L("English","8G3/En","CXD, BWH","GC11","s-english")],
-  Tuesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G3/Sc","AK","UC8","s-science"),L("Digital Skills","8TC/Ds","SXE","UC10","s-ds"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("English","8G3/En","CXD, BWH","GC11","s-english"),L("Technology","8Y4/Te","DNE","GA1","s-tech")],
-  Wednesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G3/Sc","RL","UC3","s-science"),L("Technology","8Y4/Te","DNE","GA1","s-tech"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","YC","GC4","s-maths"),L("History","8TC/Hi","DH","UA8","s-history")],
-  Thursday:[L("Registration","","TC","UA2","s-reg"),L("PSE","8TC/Ps","LJ","GB2","s-pse"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("English","8G3/En","CXD, BWH","GC11","s-english"),L("Maths","8G3/Ma","AGO","UC2","s-maths"),L("History","8TC/Hi","DH","UA8","s-history")],
-  Friday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","AGO","UC2","s-maths"),L("English","8G3/En","MJB","GC3","s-english"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("Physical Education","8YE3/Pe","NW","BAR","s-pe"),L("Art","8TC/Ar","VD","UA11","s-art")]
+  Monday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("Music","8TC/Mu","CE","PA2","s-music"),L("Welsh","8G1/We","MGC","GC5","s-welsh"),L("Digital Skills","8TC/Ds","SXE","UC10","s-ds"),L("English","8G1/En","LD","CAB1","s-english")],
+  Tuesday:[L("Registration","","TC","UA2","s-reg"),L("English","8G1/En","LD","CAB1","s-english"),L("Digital Skills","8TC/Ds","SXE","UC10","s-ds"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("English","8G1/En","LD","CAB1","s-english"),L("Technology","8Y3/Te","SP","GA5","s-tech")],
+  Wednesday:[L("Registration","","TC","UA2","s-reg"),L("English","8G1/En","LD","CAB1","s-english"),L("Technology","8Y3/Te","SP","GA5","s-tech"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("History","8TC/Hi","DH","UA8","s-history")],
+  Thursday:[L("Registration","","TC","UA2","s-reg"),L("PSE","8TC/Ps","LJ","GB2","s-pse"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Science","8G11/Sc","ON","UC5","s-science"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("History","8TC/Hi","DH","UA8","s-history")],
+  Friday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("English","8G1/En","LD","CAB1","s-english"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("Physical Education","8YE3/Pe","NW","BAR","s-pe"),L("Art","8TC/Ar","VD","UA11","s-art")]
 };
 // AVA - Week B (Mon 21 - Fri 25 Sep 2026)
 var WEEK_B={
-  Monday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","AGO","UC2","s-maths"),L("French","8TC/Fr","CT","GC13","s-french"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Science","8G3/Sc","RL","UC3","s-science"),L("History","8TC/Hi","DH","UA8","s-history")],
-  Tuesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G3/Sc","RL","UC3","s-science"),L("French","8TC/Fr","CT","GC13","s-french"),L("English","8G3/En","CXD, BWH","GC11","s-english"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("Physical Education","8YE3/Pe","NW","BAR","s-pe")],
-  Wednesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G3/Sc","ON","UA5","s-science"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","AGO","UC2","s-maths"),L("Drama","8TC/Dr","LC","PA1","s-drama"),L("Art","8TC/Ar","VD","UA11","s-art")],
-  Thursday:[L("Registration","","TC","UA2","s-reg"),L("Physical Education","8YE3/Pe","BBE","BAR","s-pe"),L("Science","8G3/Sc","ON","UC5","s-science"),L("Music","8TC/Mu","CE","PA2","s-music"),L("Product Design","8TC/Pd","DNE","GA3","s-pd"),L("English","8G3/En","CXD, BWH","GC11","s-english")],
-  Friday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G3/Sc","AK","UC8","s-science"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","YC","GC7","s-maths"),L("PSE","8TC/Ps","LJ","GC12","s-pse"),L("English","8G3/En","CXD, BWH","GC11","s-english")]
+  Monday:[L("Registration","","TC","UA2","s-reg"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("French","8TC/Fr","CT","GC13","s-french"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Science","8G11/Sc","RL","UC3","s-science"),L("History","8TC/Hi","DH","UA8","s-history")],
+  Tuesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G11/Sc","RL","UC3","s-science"),L("French","8TC/Fr","CT","GC13","s-french"),L("English","8G1/En","LD","CAB1","s-english"),L("Geography","8TC/Gg","EKE","UA7","s-geog"),L("Physical Education","8YE3/Pe","NW","BAR","s-pe")],
+  Wednesday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G11/Sc","ON","UC5","s-science"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("Drama","8TC/Dr","LC","PA1","s-drama"),L("Art","8TC/Ar","VD","UA11","s-art")],
+  Thursday:[L("Registration","","TC","UA2","s-reg"),L("Physical Education","8YE3/Pe","BBE","BAR","s-pe"),L("Science","8G11/Sc","ON","UC5","s-science"),L("Music","8TC/Mu","CE","PA2","s-music"),L("Product Design","8TC/Pd","DNE","GA3","s-pd"),L("Welsh","8G1/We","MGC","GC5","s-welsh")],
+  Friday:[L("Registration","","TC","UA2","s-reg"),L("Science","8G11/Sc","ON","UC5","s-science"),L("Religious Studies","8TC/Re","DWY","UA5","s-re"),L("Maths","8G3/Ma","JH","GC6","s-maths"),L("PSE","8TC/Ps","LJ","GC12","s-pse"),L("English","8G1/En","LD","CAB1","s-english")]
 };
 function stamp(wk){DAYS.forEach(function(d){wk[d].forEach(function(les,i){les.t=TIMES[i].s;les.e=TIMES[i].e;les.p=TIMES[i].n;});});}
 
